@@ -1,0 +1,21 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "css-loader": "^0.23.0",
+    "express": "^4.13.3",
+    "style-loader": "^0.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node dev-server.js",
+    "build": "rm -rf build && cp -pr src/static/ build && webpack"
+  },
+  "license": "MIT"
+}
